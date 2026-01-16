@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Aerosafe Tours & First Dream Destination",
+  "description": "Premium Dubai & India travel agency website featuring luxury tours, fleet management, and visa assistance.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

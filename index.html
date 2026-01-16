@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aerosafe Tours | Premium Dubai Travel Experience</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              navy: '#020817',
+              royal: '#0A1D37',
+              gold: '#C5A059',
+              champagne: '#F1E5AC',
+              sand: '#F4EBD0',
+              accent: '#B8860B',
+              copper: '#B87333',
+              teal: '#0D2B2D'
+            },
+            fontFamily: {
+              sans: ['Plus Jakarta Sans', 'sans-serif'],
+              serif: ['Cormorant Garamond', 'serif']
+            },
+            animation: {
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'float': 'float 6s ease-in-out infinite',
+              'star-movement': 'star-movement 10s linear infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              },
+              'star-movement': {
+                '0%': { transform: 'translate(0, 0)' },
+                '100%': { transform: 'translate(-100px, -100px)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      ::-webkit-scrollbar { width: 4px; }
+      ::-webkit-scrollbar-track { background: #020817; }
+      ::-webkit-scrollbar-thumb { background: #C5A059; border-radius: 10px; }
+      
+      .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.08); }
+      .glass-gold { background: rgba(197, 160, 89, 0.05); backdrop-filter: blur(20px); border: 1px solid rgba(197, 160, 89, 0.2); }
+      .glass-dark { background: rgba(2, 8, 23, 0.7); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.05); }
+      
+      .text-glow { text-shadow: 0 0 15px rgba(197, 160, 89, 0.4); }
+      .grain { position: relative; }
+      .grain::after { content: ""; position: fixed; inset: 0; pointer-events: none; background: url('https://www.transparenttextures.com/patterns/natural-paper.png'); opacity: 0.05; z-index: 9999; }
+      
+      .no-scrollbar::-webkit-scrollbar { display: none; }
+      .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+      .vertical-text { writing-mode: vertical-rl; text-orientation: mixed; }
+      
+      .star-field { position: absolute; inset: 0; background-image: radial-gradient(white 1px, transparent 0); background-size: 50px 50px; opacity: 0.1; }
+
+      .bento-glow:hover { box-shadow: 0 0 30px rgba(197, 160, 89, 0.2); border-color: rgba(197, 160, 89, 0.5); }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.475.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.12.0",
+    "framer-motion": "https://esm.sh/framer-motion@^11.11.11"
+  }
+}
+</script>
+</head>
+  <body class="bg-navy grain text-white font-sans antialiased">
+    <div id="root"></div>
+  </body>
+</html>
